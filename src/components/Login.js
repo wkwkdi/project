@@ -194,7 +194,14 @@ function Login({ setItems }) {
               </Link>
             </p>
           </div>
-          <SelectBtn onClick={handleLogin}>
+          <SelectBtn 
+          onClick={(e) =>
+            {
+              e.preventDefault();
+              handleLogin();
+            }
+          
+          }>
             <div>로그인 하기</div>
           </SelectBtn>
           <SelectBtn onClick={() => setItems(true)}>

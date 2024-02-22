@@ -20,7 +20,6 @@ function HeaderUser({ onClick, memberData, imgClick, setImgClick, Logout }) {
             <p className={styles.userName}>
               {memberData} <span>님</span>
             </p>
-            <Link to={"/mypage"}>
               <div
                 className={styles.btn}
                 onClick={(e) => {
@@ -28,9 +27,9 @@ function HeaderUser({ onClick, memberData, imgClick, setImgClick, Logout }) {
                   setImgClick(false);
                 }}
               >
-                마이페이지
+                  <Link to={"/mypage"} className={styles.my}>마이페이지</Link>
               </div>
-            </Link>
+
             <div onClick={Logout} className={styles.btn}>
               로그아웃
             </div>
