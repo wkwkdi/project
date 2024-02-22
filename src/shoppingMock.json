@@ -1,0 +1,704 @@
+[
+  {
+    "id": 1,
+    "name": "헬스 청바지",
+    "price": 29000,
+    "rating": 4.5,
+    "inStock": true,
+    "sales": 150,
+    "dateAdded": 1641033600000,
+    "type": "의류",
+    "image": "https://example.com/health-jeans.jpg",
+    "details": {
+      "introduction": "편안한 착용감과 트렌디한 스타일이 특징인 헬스 청바지입니다.",
+      "image": "https://example.com/health-jeans-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "userName": "홍길동",
+        "review": "이 청바지를 사랑해요! 정말 편하고 핏도 완벽해요.",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "userName": "김영희",
+        "review": "고급진 데님. 하지만 사이즈가 제게는 조금 크네요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "헬스 러닝화",
+    "price": 49900,
+    "rating": 4.2,
+    "inStock": true,
+    "sales": 120,
+    "dateAdded": 1641369600000,
+    "type": "장비",
+    "image": "https://example.com/health-running-shoes.jpg",
+    "details": {
+      "introduction": "최고의 러닝화! 가벼우면서 훌륭한 지지력을 제공합니다.",
+      "image": "https://example.com/health-running-shoes-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 3,
+        "userName": "이순신",
+        "review": "최고의 러닝화! 가벼우면서 훌륭한 지지력을 제공합니다.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "헬스 후디",
+    "price": 39900,
+    "rating": 4.0,
+    "inStock": false,
+    "sales": 76,
+    "dateAdded": 1641771600000,
+    "type": "의류",
+    "image": "https://example.com/health-hoodie.jpg",
+    "details": {
+      "introduction": "스타일리시한 디자인과 편안한 착용감을 제공하는 헬스 후디입니다.",
+      "image": "https://example.com/health-hoodie-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 4,
+        "userName": "박지영",
+        "review": "후디는 좋아요, 다만 더 다양한 색상으로 제공되면 좋겠어요.",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "단백질 보충제",
+    "price": 39900,
+    "rating": 4.0,
+    "inStock": false,
+    "sales": 80,
+    "dateAdded": 1651871600000,
+    "type": "기타",
+    "image": "https://example.com/protein-supplement.jpg",
+    "details": {
+      "introduction": "간편하게 단백질을 보충할 수 있는 단백질 보충제입니다.",
+      "image": "https://example.com/protein-supplement-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 4,
+        "userName": "노지영",
+        "review": "간편한 단백질 좋아요.",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "스팀 닭가슴살",
+    "price": 20000,
+    "rating": 4.0,
+    "inStock": true,
+    "sales": 600,
+    "dateAdded": 1661771600000,
+    "type": "식품",
+    "image": "https://example.com/steam-chicken-breast.jpg",
+    "details": {
+      "introduction": "건강한 식단을 위한 스팀 닭가슴살입니다.",
+      "image": "https://example.com/steam-chicken-breast-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 4,
+        "userName": "김단군",
+        "review": "식품 단백질 좋아요.",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "헬스 요가 매트",
+    "price": 35000,
+    "rating": 4.8,
+    "inStock": true,
+    "sales": 90,
+    "dateAdded": 1671771600000,
+    "type": "장비",
+    "image": "https://example.com/yoga-mat.jpg",
+    "details": {
+      "introduction": "요가를 위한 고밀도 폼으로 만든 헬스 요가 매트입니다.",
+      "image": "https://example.com/yoga-mat-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 7,
+        "userName": "김유진",
+        "review": "매트가 푹신해서 좋아요!",
+        "rating": 5
+      },
+      {
+        "id": 8,
+        "userName": "이태환",
+        "review": "요가에 사용하기 딱 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "헬스 스마트 워치",
+    "price": 89000,
+    "rating": 4.3,
+    "inStock": true,
+    "sales": 110,
+    "dateAdded": 1681771600000,
+    "type": "장비",
+    "image": "https://example.com/smart-watch.jpg",
+    "details": {
+      "introduction": "다양한 운동 기능을 제공하는 헬스 스마트 워치입니다.",
+      "image": "https://example.com/smart-watch-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 9,
+        "userName": "최성우",
+        "review": "기능이 다양하고 디자인도 세련되었습니다.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "헬스 프로틴 파우더",
+    "price": 45000,
+    "rating": 4.5,
+    "inStock": true,
+    "sales": 130,
+    "dateAdded": 1691771600000,
+    "type": "식품",
+    "image": "https://example.com/protein-powder.jpg",
+    "details": {
+      "introduction": "단백질 보충을 위한 헬스 프로틴 파우더입니다.",
+      "image": "https://example.com/protein-powder-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 10,
+        "userName": "이하늘",
+        "review": "맛이 깔끔하고 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "헬스 코어 트레이너",
+    "price": 75000,
+    "rating": 4.7,
+    "inStock": false,
+    "sales": 60,
+    "dateAdded": 1701771600000,
+    "type": "장비",
+    "image": "https://example.com/core-trainer.jpg",
+    "details": {
+      "introduction": "코어 근육을 강화하는 헬스 코어 트레이너입니다.",
+      "image": "https://example.com/core-trainer-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 11,
+        "userName": "김태영",
+        "review": "운동 효과가 좋아요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "헬스 핸드 그립",
+    "price": 15000,
+    "rating": 4.1,
+    "inStock": true,
+    "sales": 100,
+    "dateAdded": 1711771600000,
+    "type": "장비",
+    "image": "https://example.com/hand-grip.jpg",
+    "details": {
+      "introduction": "손목과 손가락 근육을 강화하는 헬스 핸드 그립입니다.",
+      "image": "https://example.com/hand-grip-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 12,
+        "userName": "장성호",
+        "review": "강도 조절이 편리하고 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "헬스 프로틴 바",
+    "price": 59000,
+    "rating": 4.4,
+    "inStock": false,
+    "sales": 70,
+    "dateAdded": 1721771600000,
+    "type": "식품",
+    "image": "https://example.com/protein-bar.jpg",
+    "details": {
+      "introduction": "간편하게 섭취 가능한 헬스 프로틴 바입니다.",
+      "image": "https://example.com/protein-bar-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 13,
+        "userName": "손영미",
+        "review": "간식으로 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "헬스 요가 블록",
+    "price": 25000,
+    "rating": 4.6,
+    "inStock": true,
+    "sales": 110,
+    "dateAdded": 1731771600000,
+    "type": "장비",
+    "image": "https://example.com/yoga-block.jpg",
+    "details": {
+      "introduction": "요가 도구로 사용되는 헬스 요가 블록입니다.",
+      "image": "https://example.com/yoga-block-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 14,
+        "userName": "정민호",
+        "review": "요가에 필수품이에요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "헬스 덤벨 세트",
+    "price": 99000,
+    "rating": 4.9,
+    "inStock": true,
+    "sales": 120,
+    "dateAdded": 1741771600000,
+    "type": "장비",
+    "image": "https://example.com/dumbbell-set.jpg",
+    "details": {
+      "introduction": "다양한 무게의 헬스 덤벨 세트입니다.",
+      "image": "https://example.com/dumbbell-set-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 15,
+        "userName": "이동욱",
+        "review": "다양한 무게로 운동하기 좋아요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "헬스 케틀벨",
+    "price": 69000,
+    "rating": 4.2,
+    "inStock": false,
+    "sales": 80,
+    "dateAdded": 1751771600000,
+    "type": "장비",
+    "image": "https://example.com/kettlebell.jpg",
+    "details": {
+      "introduction": "근력과 근지구력 향상에 효과적인 헬스 케틀벨입니다.",
+      "image": "https://example.com/kettlebell-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 16,
+        "userName": "김성희",
+        "review": "운동에 필요한 무게가 다양하게 있어서 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "헬스 고무매트",
+    "price": 18000,
+    "rating": 4.0,
+    "inStock": true,
+    "sales": 100,
+    "dateAdded": 1761771600000,
+    "type": "장비",
+    "image": "https://example.com/rubber-mat.jpg",
+    "details": {
+      "introduction": "바닥 보호 및 쿠션 효과를 주는 헬스 고무매트입니다.",
+      "image": "https://example.com/rubber-mat-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 17,
+        "userName": "박상민",
+        "review": "운동 시 바닥이 편안해서 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "헬스 암웨이트",
+    "price": 129000,
+    "rating": 4.7,
+    "inStock": true,
+    "sales": 130,
+    "dateAdded": 1771771600000,
+    "type": "장비",
+    "image": "https://example.com/arm-weight.jpg",
+    "details": {
+      "introduction": "팔에 부착하여 사용하는 헬스 암웨이트입니다.",
+      "image": "https://example.com/arm-weight-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 18,
+        "userName": "이미영",
+        "review": "팔에 부담 없이 사용하기 좋아요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "헬스 푸쉬업 바",
+    "price": 25000,
+    "rating": 4.5,
+    "inStock": false,
+    "sales": 70,
+    "dateAdded": 1781771600000,
+    "type": "장비",
+    "image": "https://example.com/push-up-bar.jpg",
+    "details": {
+      "introduction": "팔, 가슴, 등 근육을 강화하는 헬스 푸쉬업 바입니다.",
+      "image": "https://example.com/push-up-bar-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 19,
+        "userName": "정성호",
+        "review": "근육 강화에 효과적인 운동 도구에요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "헬스 로잉 머신",
+    "price": 89000,
+    "rating": 4.6,
+    "inStock": true,
+    "sales": 100,
+    "dateAdded": 1791771600000,
+    "type": "장비",
+    "image": "https://example.com/rowing-machine.jpg",
+    "details": {
+      "introduction": "다양한 근육을 강화할 수 있는 헬스 로잉 머신입니다.",
+      "image": "https://example.com/rowing-machine-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 20,
+        "userName": "김지영",
+        "review": "유산소 운동에 최적화된 기구에요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "헬스 스텝 트레이너",
+    "price": 45000,
+    "rating": 4.3,
+    "inStock": false,
+    "sales": 60,
+    "dateAdded": 1801771600000,
+    "type": "장비",
+    "image": "https://example.com/step-trainer.jpg",
+    "details": {
+      "introduction": "하체 근육 강화에 효과적인 헬스 스텝 트레이너입니다.",
+      "image": "https://example.com/step-trainer-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 21,
+        "userName": "박성훈",
+        "review": "집에서 간편하게 운동할 수 있어 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "헬스 트레드밀",
+    "price": 120000,
+    "rating": 4.8,
+    "inStock": true,
+    "sales": 120,
+    "dateAdded": 1811771600000,
+    "type": "장비",
+    "image": "https://example.com/treadmill.jpg",
+    "details": {
+      "introduction": "실내에서 걷기와 달리기를 할 수 있는 헬스 트레드밀입니다.",
+      "image": "https://example.com/treadmill-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 22,
+        "userName": "이승희",
+        "review": "편안한 쿠션과 다양한 프로그램이 맘에 들어요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "헬스 에어로바이크",
+    "price": 69000,
+    "rating": 4.2,
+    "inStock": true,
+    "sales": 80,
+    "dateAdded": 1821771600000,
+    "type": "장비",
+    "image": "https://example.com/air-bike.jpg",
+    "details": {
+      "introduction": "유산소 운동과 동시에 근력 강화가 가능한 헬스 에어로바이크입니다.",
+      "image": "https://example.com/air-bike-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 23,
+        "userName": "김성호",
+        "review": "다양한 운동이 가능해서 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "헬스 푸쉬업 그립",
+    "price": 18000,
+    "rating": 4.5,
+    "inStock": true,
+    "sales": 100,
+    "dateAdded": 1831771600000,
+    "type": "장비",
+    "image": "https://example.com/push-up-grip.jpg",
+    "details": {
+      "introduction": "더 효과적인 푸쉬업을 위한 헬스 푸쉬업 그립입니다.",
+      "image": "https://example.com/push-up-grip-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 24,
+        "userName": "이도희",
+        "review": "팔꿈치에 부담이 덜 가서 좋아요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "헬스 레깅스",
+    "price": 35000,
+    "rating": 4.7,
+    "inStock": true,
+    "sales": 90,
+    "dateAdded": 1841771600000,
+    "type": "의류",
+    "image": "https://example.com/leggings.jpg",
+    "details": {
+      "introduction": "스트레치성이 뛰어나고 착용감이 편안한 헬스 레깅스입니다.",
+      "image": "https://example.com/leggings-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 25,
+        "userName": "이혜진",
+        "review": "운동 중 편안하게 움직일 수 있어서 좋아요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "헬스 스쿼트 랙",
+    "price": 79000,
+    "rating": 4.4,
+    "inStock": false,
+    "sales": 70,
+    "dateAdded": 1851771600000,
+    "type": "장비",
+    "image": "https://example.com/squat-rack.jpg",
+    "details": {
+      "introduction": "스쿼트 운동에 최적화된 헬스 스쿼트 랙입니다.",
+      "image": "https://example.com/squat-rack-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 26,
+        "userName": "김민수",
+        "review": "집에서 스쿼트 운동하기에 딱 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "헬스 무릎 보호대",
+    "price": 15000,
+    "rating": 4.2,
+    "inStock": true,
+    "sales": 80,
+    "dateAdded": 1861771600000,
+    "type": "장비",
+    "image": "https://example.com/knee-support.jpg",
+    "details": {
+      "introduction": "무릎을 보호하고 지지해주는 헬스 무릎 보호대입니다.",
+      "image": "https://example.com/knee-support-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 27,
+        "userName": "박지훈",
+        "review": "런닝이나 스쿼트할 때 편하게 사용 중이에요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "헬스 튜브 밴드",
+    "price": 12000,
+    "rating": 4.0,
+    "inStock": true,
+    "sales": 100,
+    "dateAdded": 1871771600000,
+    "type": "장비",
+    "image": "https://example.com/tube-band.jpg",
+    "details": {
+      "introduction": "다양한 운동에 활용할 수 있는 헬스 튜브 밴드입니다.",
+      "image": "https://example.com/tube-band-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 28,
+        "userName": "이승진",
+        "review": "가볍고 휴대하기 편해서 좋아요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "헬스 스피드 로프",
+    "price": 18000,
+    "rating": 4.6,
+    "inStock": true,
+    "sales": 90,
+    "dateAdded": 1881771600000,
+    "type": "장비",
+    "image": "https://example.com/speed-rope.jpg",
+    "details": {
+      "introduction": "유산소 운동과 속도 향상에 도움을 주는 헬스 스피드 로프입니다.",
+      "image": "https://example.com/speed-rope-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 29,
+        "userName": "김서영",
+        "review": "속도 조절이 편리해서 만족스러워요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "헬스 허리 벨트",
+    "price": 25000,
+    "rating": 4.3,
+    "inStock": false,
+    "sales": 60,
+    "dateAdded": 1891771600000,
+    "type": "장비",
+    "image": "https://example.com/waist-belt.jpg",
+    "details": {
+      "introduction": "허리를 보호하고 안정감을 주는 헬스 허리 벨트입니다.",
+      "image": "https://example.com/waist-belt-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 30,
+        "userName": "박승호",
+        "review": "무거운 중량을 들 때 허리에 편안함을 느껴요.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "헬스 더블 턱 트레이닝 바",
+    "price": 30000,
+    "rating": 4.8,
+    "inStock": true,
+    "sales": 110,
+    "dateAdded": 1901771600000,
+    "type": "장비",
+    "image": "https://example.com/pull-up-bar.jpg",
+    "details": {
+      "introduction": "상체 근육 강화에 효과적인 헬스 더블 턱 트레이닝 바입니다.",
+      "image": "https://example.com/pull-up-bar-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 31,
+        "userName": "김민영",
+        "review": "헬스장 운동에 필수품이에요.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "헬스 타이밍 벨트",
+    "price": 35000,
+    "rating": 4.5,
+    "inStock": true,
+    "sales": 120,
+    "dateAdded": 1911771600000,
+    "type": "장비",
+    "image": "https://example.com/timing-belt.jpg",
+    "details": {
+      "introduction": "타이밍 운동을 도와주는 헬스 타이밍 벨트입니다.",
+      "image": "https://example.com/timing-belt-details.jpg"
+    },
+    "reviews": [
+      {
+        "id": 32,
+        "userName": "이다영",
+        "review": "유산소 운동할 때 타이밍 조절이 편리해서 좋아요.",
+        "rating": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* max-width: 708px; */
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+.container > div{
+    font-size: 14px;
+}
+.input{
+    width: 708px;
+    height: 60px;
+}
+.input:nth-child(4){
+    width: 708px;
+    height: 60px;
+    margin: 100px 0;
+}
+
+.btn{
+    background-color: #1e326d;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 30px;
+}

@@ -1,0 +1,14 @@
+.starPack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.star {
+  font-size: 20px;
+}
+.selected {
+  color: yellow;
+  -webkit-text-stroke: 1px #666;
+}

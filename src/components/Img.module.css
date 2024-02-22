@@ -1,0 +1,6 @@
+.img {
+  background-color: var(--background-color);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+}

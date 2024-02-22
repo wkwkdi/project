@@ -1,0 +1,148 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 50px auto;
+}
+@media (max-width: 840px) {
+  .container {
+    padding: 0 calc(14px * 5) 0 calc(14px * 5);
+  }
+}
+.headBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.imgBox {
+  width: 100%;
+  aspect-ratio: 1/1;
+  grid-column: span 1;
+  background-color: #f2f2f2;
+  position: relative;
+  padding: 16px;
+}
+.imgBox > input {
+  width: 100%;
+  padding: 0;
+  border-radius: 0;
+}
+.hiddenInput {
+  opacity: 0;
+  position: absolute;
+  /* background-color: #666; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.previewWrap {
+  width: 100%;
+  height: 100%;
+}
+.preview {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.imgX {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.infoBox {
+  width: 100%;
+  aspect-ratio: 2/1;
+  grid-column: span 2;
+  box-shadow: 0 0 4px 1px #666;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-size: 20px;
+}
+.infoBar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.infoBar > input {
+  max-width: 500px;
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 0 2px 1px #666;
+  font-size: 20px;
+  padding-left: 40px;
+}
+.selectBox {
+  max-width: 500px;
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 0 2px 1px #666;
+  font-size: 20px;
+  padding-left: 40px;
+}
+.stockBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.stockBtnWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.stockBtn {
+  width: 40px;
+  height: 40px;
+}
+.contentBox {
+  width: 100%;
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contentDescription {
+  width: 100%;
+  font-size: 24px;
+  padding: 16px 0;
+  color: var(--title-color);
+  border-top: 4px solid var(--title-color);
+  border-bottom: 1px solid var(--text-color);
+}
+.content {
+  padding: 16px;
+  width: 100%;
+  position: relative;
+}
+.preview {
+  background-color: #f2f2f2;
+}
+.submit {
+  width: 400px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: white;
+  margin-top: 40px;
+  cursor: pointer;
+}

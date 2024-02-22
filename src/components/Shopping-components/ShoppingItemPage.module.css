@@ -1,0 +1,372 @@
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* @media (max-width: 840px) {
+  .container {
+    padding: 0 calc(14px * 5) 0 calc(14px * 5);
+  }
+} */
+
+.headBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.headBoxItem {
+  width: 100%;
+  aspect-ratio: 1/1;
+  padding: 40px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.headBoxItemMiddle {
+  background-color: #fff;
+  box-shadow: 0 0 4px 1px #666;
+}
+.headBoxItem > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.itemTitle {
+  font-size: 32px;
+  color: var(--title-color);
+}
+.starPack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.star {
+  font-size: 20px;
+  background-color: #f5f5f5;
+}
+.selected {
+  color: yellow;
+  -webkit-text-stroke: 1px #666;
+}
+.line {
+  width: 90%;
+  border: 1px solid #333;
+}
+.isStock {
+  font-size: 20px;
+}
+.howMany {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.iconWrap {
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+}
+.iconWrap > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.number {
+  font-size: 28px;
+  font-weight: bold;
+}
+.priceBoxItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 400;
+}
+.adminBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.total {
+  margin: 20px 0px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.basket {
+  width: 200px;
+  height: 60px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+.basket:active {
+  background-color: white;
+  box-shadow: 0 0 2px 4px var(--main-color);
+  color: var(--main-color);
+  user-select: none;
+}
+.soldOut {
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: var(--text-color);
+}
+
+/* details  */
+.details {
+  width: 100%;
+  margin: 200px 0 0 0;
+}
+.detailsHead {
+  font-size: 24px;
+  padding: 16px 0;
+  color: var(--title-color);
+  border-top: 4px solid var(--title-color);
+  border-bottom: 1px solid var(--text-color);
+}
+.details > img {
+  padding: 8px 0;
+  width: 100%;
+}
+.introduction {
+  font-size: 24px;
+}
+
+/* 추천상품 */
+.items {
+  display: flex;
+  gap: 48px;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.item {
+  padding: 30px 0 0;
+  width: 150px;
+  /* overflow: hidden; */
+}
+
+.itemWraper {
+  width: 150px;
+  height: 150px;
+}
+.itemWraper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.name {
+  color: #666;
+  font-size: 20px;
+}
+
+/* 상품후기 */
+.detailsHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviewWriteBtn {
+  width: 100px;
+  height: 60px;
+  color: white;
+  background-color: var(--main-color);
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.reviewWriteBtn:active {
+  background-color: white;
+  box-shadow: 0 0 2px 4px var(--main-color);
+  color: var(--main-color);
+  user-select: none;
+}
+.reviews {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.MEN_NICKNAME {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviewEditAndDeleteBtn > span {
+  cursor: pointer;
+}
+.revierwName {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+}
+.reviewImageBox {
+  height: 240px;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.reviewImage {
+  height: 100%;
+}
+/* 리뷰모달 */
+.reviewWriteModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%;
+  height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+}
+.reviewWriteBox {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+}
+.reviewWriteTitle {
+  font-size: 28px;
+}
+.reviewWriteName {
+  font-size: 20px;
+  color: #666;
+}
+.reviewWriteContents {
+  resize: none;
+  width: 100%;
+  height: 40%;
+  padding: 12px;
+  outline: none;
+  font-size: 20px;
+}
+.reviewWriteSubmitBtn {
+  align-self: center;
+  width: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--main-color);
+  font-size: 20px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.reviewWriteSubmitBtn:active {
+  background-color: white;
+  box-shadow: 0 0 4px 2px var(--main-color);
+  color: var(--main-color);
+  user-select: none;
+}
+.reviewWriteModalClose {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.imgWrapper {
+  width: 375px;
+  height: 120px;
+  position: absolute;
+  top: 70px;
+  left: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+.modalImgBox {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+.modalImageHiddenInput {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.previewWrap {
+  width: 100%;
+  height: 100%;
+}
+.modalImgPreview {
+  width: 100%;
+  height: 100%;
+}
+.ModalimgX {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+/* 감사모달 */
+.thanks {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 1px #999;
+}

@@ -1,0 +1,240 @@
+.mainContainer {
+  margin-top: 100px;
+  /* background-color: #eee; */
+  padding: 50px 244px;
+}
+
+.member {
+  text-align: center;
+  font-size: 40px;
+  /* margin-bottom: 50px; */
+}
+
+.container {
+  width: 100%;
+  max-width: 952px;
+  margin: 0 auto;
+  padding: 50px 122px;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.kakaoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.kakaoLogin {
+  width: 200px;
+  height: 40px;
+}
+
+.img {
+  width: 100%;
+  height: 40px;
+  object-fit: cover;
+}
+
+.border {
+  margin: 50px 0;
+  width: 100%;
+  border-bottom: 2px solid #765c5c;
+
+}
+
+/* 카카오 인증 */
+
+input[type="checkbox"] {
+  width: 28px;
+  height: 28px;
+}
+
+.input {
+  margin-right: 4px;
+}
+
+.checkboxWrap {
+  display: flex;
+  align-items: center;
+}
+
+.width {
+  width: 100%;
+  height: 40px;
+  padding-left: 50px;
+  font-size: 16px;
+}
+
+
+
+.textareaWrap {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  height: 172px;
+  resize: none;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.email,
+.pw,
+.gender,
+.name,
+.adr {
+  margin-top: 30px;
+}
+
+/* 로그인 마진 값 */
+.margin {
+  margin: 40px 0;
+}
+
+
+/* 이메일 비번 찾기때 css */
+.selectemail {
+  width: 45%;
+  height: 40px;
+  padding-left: 50px;
+  font-size: 16px;
+}
+
+.emailflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.findcontainer {
+  /* margin-top: 100px; */
+  /* background-color: #eee; */
+  padding: 50px 244px;
+}
+
+/* 성별 나이*/
+.gender_age {
+  /* display: flex; */
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gender {
+  height: 100%;
+  display: flex;
+  gap: 8px;
+  /* align-items: center;
+  gap: 5px; */
+}
+
+.marrig {
+  margin-right: 8px;
+}
+
+.center:hover {
+  background-color: #0075ff;
+  color: white;
+  border: none;
+}
+
+.center {
+  width: 100px;
+  height: 40px;
+  /* background-color: #765c5c; */
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gender1 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* border-right: 1px solid black; */
+  /* background-color: aqua; */
+}
+
+.age {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/* 모달 */
+/* 모달 컨테이너 */
+/* 모달 스타일 */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* height: 100vh; */
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 구글 로그인 */
+.googleLogin {
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

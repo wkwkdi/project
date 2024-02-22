@@ -1,0 +1,101 @@
+.red {
+  height: 100%;
+  color: red;
+  font-size: 24px;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color {
+  height: 100%;
+  color: #1e326d;
+  font-size: 32px;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  /* text-align: center; */
+}
+
+.wid {
+  width: 490px;
+  height: 40px;
+  padding-left: 8px;
+  margin-top: 16px;
+  appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.widbtn {
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #1e326d;
+  color: white;
+  cursor: pointer;
+}
+
+.widbtn1 {
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+}
+
+.flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.padding {
+  padding-top: 20px;
+}
+
+.modalPw {
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.nowPw {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  padding-top: 16px;
+  padding-left: 30px;
+  font-size: 24px;
+}
+
+/* .modalwrp {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} */

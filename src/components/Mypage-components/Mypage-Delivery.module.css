@@ -1,0 +1,124 @@
+.container {
+  width: 100%;
+  max-width: 1074px;
+  padding: 100px 0;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.title {
+  font-size: 40px;
+  text-align: center;
+  color: var(--title-color);
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  margin: 50px 0 50px;
+  width: 100%;
+  max-width: 830px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.content1 {
+  border-bottom: 4px solid #d9d9d9;
+  padding-bottom: 50px;
+}
+.item {
+  width: 100%;
+  width: 830px;
+  padding: 40px 120px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #d9d9d9;
+}
+.titlesTitle {
+  font-size: 32px;
+}
+.titlesPrice {
+  font-size: 20px;
+}
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.goodss {
+}
+.goods {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  width: 240px;
+}
+.imgWraper {
+  width: 108px;
+  height: 108px;
+}
+.imgWraper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.goodsTitle {
+  font-size: 16px;
+  color: var(--title-color);
+}
+.goodsPrice {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.css {
+  width: 830px;
+  height: 200px;
+  color: #666;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.exchangeBtn {
+  width: 220px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--title-color);
+  border: 2px solid var(--text-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 주문내역 */
+.orderDetailsClassification {
+  box-shadow: inset 0 0 0 2px #d9d9d9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px 0;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.orderDetails {
+  box-shadow: inset 0 0 0 2px #d9d9d9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+  border-radius: 20px;
+}
+.orderDetail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+}

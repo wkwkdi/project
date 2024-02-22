@@ -1,0 +1,44 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mountain {
+  width: 100px;
+  height: 100px;
+  background-color: #8fc1e3;
+  margin: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.mountain1 {
+  animation-delay: 0.5s;
+}
+
+.mountain2 {
+  animation-delay: 1s;
+}
+
+.mountain3 {
+  animation-delay: 1.5s;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mountain-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100vh;
+}

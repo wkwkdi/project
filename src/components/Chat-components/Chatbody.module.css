@@ -1,0 +1,333 @@
+.container {
+  border: 1px solid #ccc;
+  display: flex;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  max-width: 1440px;
+  height: 100%;
+}
+
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  gap: 16px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #ccc;
+  margin: 40px;
+  padding: 30px;
+}
+
+.chatlist {
+  list-style: none;
+  /* padding: 4px; */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatlistColor {
+  list-style: none;
+  /* padding: 4px; */
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: #d8f2f8;
+}
+
+.chatlist:hover {
+  background-color: #d8f2f8;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+.chatlist:hover .chatDel {
+  background-color: #fff;
+}
+
+.messages {
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  border: 1px solid #ccc;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-bottom: 0;
+  overflow-y: auto;
+  height: 700px;
+  position: relative;
+}
+
+.messages::-webkit-scrollbar {
+  width: 0;
+}
+
+.messageForm {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  padding: 16px;
+}
+
+.msg {
+  display: flex;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+.sent {
+  /* background-color: #DCF8C6; */
+  background-color: #b5effc;
+  align-self: flex-end;
+  width: 300px;
+  height: auto;
+  padding: 16px;
+  /* color: #fff; */
+}
+
+.receive {
+  background-color: #eaeaea;
+  align-self: flex-start;
+  width: 300px;
+  height: auto;
+  padding: 16px;
+}
+
+.messageInput {
+  width: 680px;
+}
+.button {
+  padding: 8px;
+  background-color: #60c463;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 13px;
+}
+
+.messageInfo {
+  color: #333;
+  font-size: 12px;
+  justify-content: flex-end;
+}
+
+.read {
+  padding: 8px;
+}
+
+.chatDel {
+  border: 1px solid #000;
+  padding: 4px 8px;
+  height: 100%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* .message-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .messages {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 8px;
+  } 
+  
+  .send-button {
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+  } 
+  .button{
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .msg {
+    display: flex;
+    padding: 8px 16px;
+    margin: 8px;
+    border-radius: 8px;
+    max-width: 80%;
+  }
+  
+  .sent {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+    width: 200px;
+    height: auto;
+}
+
+.received {
+    background-color: #EAEAEA;
+    align-self: flex-start;
+    width: 200px;
+    height: auto;
+}
+.messageContainer{
+  display: flex;
+  flex-direction: column;
+}
+.messageInfo{
+ color: #333;
+ font-size: 14px;
+ justify-content: flex-end;
+}
+.messageInfo span{
+  padding-right: 8px;
+}
+.chatlist{
+  margin: 50px;
+  list-style: none;
+} */
+
+/* .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:24px;
+}
+.setContainer{
+    width: 100%;
+    height: 820PX;
+    background-color: #ddd;
+}
+
+.setHeader{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap:24px;
+}
+
+.btn{
+    background-color: #fff;
+    width: 200px;
+    height: 60px;
+    border-radius: 99999px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* 버디관리 1번째 div */
+
+/* .mapNav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.buddy{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.toggle {
+    width: 58px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 99999px;
+    position: relative;
+    margin-right: 40px;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    background-color: #d9d9d9;
+    border-radius: 9999px;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+} */
+
+/* 버디관리 2번째 div */
+
+/* .friends{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.profit{
+    display: flex;
+    gap: 16px;
+}
+
+.friend{
+    width: 384px;
+    height: 40px;
+    background-color: #FFF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+    gap:16px;
+    
+} */
+
+/* 버디 찾기 3번째 div */
+
+/* .chatContainer{
+    width: 100%;
+    height: 820PX;
+    background-color: #D9D9D9;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+    gap:40px;
+}
+
+.chat {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.write{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}  */

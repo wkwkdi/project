@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.infoWindowBox {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 30px;
+  justify-content: space-between;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  font-size: 16px;
+  margin-bottom: 3px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.box {
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+.infoWindowBox {
+  /* border: 1px solid #000; */
+  display: flex;
+  gap: 30px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}

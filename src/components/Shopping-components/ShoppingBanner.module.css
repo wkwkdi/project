@@ -1,0 +1,31 @@
+.banner {
+  background-color: #c6f3c9;
+  height: 400px;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.imgWraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.bannerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bannerTitle {
+  font-size: 40px;
+  color: var(--main-color);
+}
+.bannerText {
+  font-size: 16px;
+  color: var(--main-color);
+}

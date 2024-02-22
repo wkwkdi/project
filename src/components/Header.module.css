@@ -1,0 +1,204 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  height: 100px;
+}
+
+.logo {
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ul {
+  display: flex;
+  gap: 24px;
+  /* width: 650px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.ul li {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.iconWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.iconCircle {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.iconCircleNew {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  /* border: 1px solid transparent; 초기에는 투명한 border */
+  animation: flash 1s linear infinite;
+  /* cursor: pointer; */
+  /* 1초 간격으로 반복 */
+}
+
+.login {
+  box-shadow: 0 0 2px 4px var(--main-color);
+}
+
+.iconCircle > img {
+  width: 100%;
+  height: 100%;
+}
+
+.iconCircleNew > img {
+  width: 28px;
+  height: 28px;
+}
+
+.logBox {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 60px;
+  left: -100px;
+  z-index: 10;
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.userName {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+  user-select: none;
+  cursor: auto;
+}
+
+.btn {
+  font-size: 16px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* 관리자 */
+.miconCircle {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.mlogin {
+  box-shadow: 0 0 2px 4px var(--main-color);
+}
+
+.miconCircle > img {
+  width: 100%;
+  height: 100%;
+}
+
+.mlogBox {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 60px;
+  left: -100px;
+  z-index: 10;
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.muserName {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 메시지함 */
+.iconMessage {
+  position: absolute;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 100px;
+  top: 120%;
+  z-index: 9999;
+  left: -100px;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  cursor: auto;
+  user-select: none;
+}
+
+.message {
+  /* border: 1px solid black; */
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.message:hover {
+  background-color: #20346e;
+  color: white;
+  border-radius: 1rem;
+}
+
+@keyframes flash {
+  0% {
+    box-shadow: transparent;
+  }
+
+  50% {
+    box-shadow: 0 0 4px 2px rgb(255, 0, 0);
+    /* 혹은 다른 색상 */
+  }
+
+  100% {
+    box-shadow: transparent;
+  }
+}

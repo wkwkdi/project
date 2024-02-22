@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    gap : 20px
+}
+
+.select {
+    background-color: #1e326d;
+    color: #fff;
+    font-weight: 700;
+  }

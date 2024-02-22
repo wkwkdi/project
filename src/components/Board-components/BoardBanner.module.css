@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  /* max-width: 1920px; */
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background-color: #feefd0;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.position {
+  width: 230px;
+  height: 81px;
+  position: absolute;
+  top: 62%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: -2px;
+  color: #1e326d;
+}
+
+.position > h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.position > p {
+  font-size: 16px;
+  font-weight: 400;
+}

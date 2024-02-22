@@ -1,0 +1,23 @@
+.width {
+    width: 50%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.maxWidth {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+}
+
+.btn {
+    height: 30px;
+    width: 120px;
+    margin-left: 16px;
+}
+
+.paddingleft {
+    /* margin-left: 8px; */
+    border-left: none;
+}

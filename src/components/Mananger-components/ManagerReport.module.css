@@ -1,0 +1,93 @@
+.reportContainer {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px 100px;
+}
+
+.reportInfoAll {
+  width: 700px;
+  height: 100%;
+}
+
+.reportRightHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 50px;
+}
+
+.managerRightHeader > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reportImageWrap {
+  /* border: 1px solid black; */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 100%;
+  height: 356px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+/* 이미지 css 바꿔야할수도 */
+.reportImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.reportCategory {
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 12px;
+  /* background-color: #666666; */
+  color: rgba(230, 0, 0, 0.8);
+  /* box-shadow: 0 0 4px rgba(230, 0, 0, 0.8); */
+  margin-bottom: 50px;
+}
+
+.reportCategory span {
+  color: #000;
+  font-weight: bold;
+}
+
+.reportContent {
+  /* border: 1px solid black; */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+  padding: 16px;
+}
+
+.noReport {
+  width: 700px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noReportText {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.btnWrap {
+}
