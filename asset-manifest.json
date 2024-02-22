@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/project/static/css/main.fed34132.css",
+    "main.css": "/project/static/css/main.999421cc.css",
     "main.js": "/project/static/js/main.f91d6c20.js",
     "static/media/캐릭터만.gif": "/project/static/media/캐릭터만.4b412edb26c1676dd540.gif",
     "static/media/buddyLogo.svg": "/project/static/media/buddyLogo.b97c1e22b69e1426c9528f0b841d1523.svg",
@@ -57,11 +57,11 @@
     "static/media/chevron-left-solid.svg": "/project/static/media/chevron-left-solid.6575d0989d1d411eb12c04f99df6e6b3.svg",
     "static/media/minus-solid.svg": "/project/static/media/minus-solid.552354b56005563d4e6c740221d31871.svg",
     "static/media/mountain-left.svg": "/project/static/media/mountain-left.a9307431d20f86b9fab18c38593b455a.svg",
-    "main.fed34132.css.map": "/project/static/css/main.fed34132.css.map",
+    "main.999421cc.css.map": "/project/static/css/main.999421cc.css.map",
     "main.f91d6c20.js.map": "/project/static/js/main.f91d6c20.js.map"
   },
   "entrypoints": [
-    "static/css/main.fed34132.css",
+    "static/css/main.999421cc.css",
     "static/js/main.f91d6c20.js"
   ]
 }
