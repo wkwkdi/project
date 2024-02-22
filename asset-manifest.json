@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project/static/css/main.5007b0a5.css",
-    "main.js": "/project/static/js/main.bc266f77.js",
+    "main.js": "/project/static/js/main.9f14d928.js",
     "static/media/캐릭터만.gif": "/project/static/media/캐릭터만.4b412edb26c1676dd540.gif",
     "static/media/buddyLogo.svg": "/project/static/media/buddyLogo.b97c1e22b69e1426c9528f0b841d1523.svg",
     "static/media/닭가슴살.png": "/project/static/media/닭가슴살.ff8919b5c103d7c64e18.png",
@@ -58,10 +58,10 @@
     "static/media/minus-solid.svg": "/project/static/media/minus-solid.552354b56005563d4e6c740221d31871.svg",
     "static/media/mountain-left.svg": "/project/static/media/mountain-left.a9307431d20f86b9fab18c38593b455a.svg",
     "main.5007b0a5.css.map": "/project/static/css/main.5007b0a5.css.map",
-    "main.bc266f77.js.map": "/project/static/js/main.bc266f77.js.map"
+    "main.9f14d928.js.map": "/project/static/js/main.9f14d928.js.map"
   },
   "entrypoints": [
     "static/css/main.5007b0a5.css",
-    "static/js/main.bc266f77.js"
+    "static/js/main.9f14d928.js"
   ]
 }
