@@ -7,9 +7,7 @@
   margin: 0 auto;
   height: 100px;
 }
-.my{
-  color: inherit;
-}
+
 .logo {
   width: 220px;
   height: 60px;
@@ -131,6 +129,10 @@
 
 .mlogin {
   box-shadow: 0 0 2px 4px var(--main-color);
+}
+
+.manager{
+  color: #333;
 }
 
 .miconCircle > img {

@@ -20,7 +20,6 @@ function HeaderMg({ onClick, managerData, imgClick, setImgClick, Logout }) {
             <p className={styles.muserName}>
               관리자 <span>님</span>
             </p>
-            <Link to={"/manager"}>
               <div
                 className={styles.btn}
                 onClick={(e) => {
@@ -28,9 +27,10 @@ function HeaderMg({ onClick, managerData, imgClick, setImgClick, Logout }) {
                   setImgClick(false);
                 }}
               >
+                  <Link to={"/manager"} className={styles.manager}>
                 관리자 페이지
-              </div>
             </Link>
+              </div>
             <div onClick={Logout} className={styles.btn}>
               로그아웃
             </div>

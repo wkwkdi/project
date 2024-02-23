@@ -1,6 +1,5 @@
 // 관리자 페이지
 import styles from "./Manager.module.css";
-
 import { useContext, useEffect, useRef, useState } from "react";
 
 import { deleteDatas, getAddress, updateData } from "../api/firebase";
@@ -117,7 +116,7 @@ function Manager() {
 
   // 어떤 신고란을 클릭했는지
   const handleReportClick = (docId) => {
-    const reportIdx = reportList.find((de) => de?.id == docId);
+    const reportIdx = reportList.find((de) => de?.docId == docId);
     setReportContent(reportIdx);
   };
 
@@ -125,7 +124,6 @@ function Manager() {
     <>
       {/* 배너 */}
       <div className={styles.managerBanner}>
-        
         <div className={styles.managerText}>관리자</div>
       </div>
       {/* 화면 전체 감싸는 div */}

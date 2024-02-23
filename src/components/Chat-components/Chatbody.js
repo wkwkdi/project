@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { buddyChat, db, getAddress } from "../../api/firebase";
 import {
   add,
@@ -14,6 +14,7 @@ import {
 import styles from "./Chatbody.module.css";
 import { useLocation } from "react-router-dom";
 import Chatnav from "./Chatnav";
+import { BuddizContext } from "../../contexts/buddizContexts";
 
 const otherUser = { MEM: "dd" };
 
@@ -36,12 +37,17 @@ function Chat() {
 
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState(``);
+  const { setChatOnOff } = useContext(BuddizContext);
 
   const chatRoomData = useLocation();
   console.log(chatRoomData?.state);
   useEffect(() => {
     setChatData(chatRoomData?.state);
   }, [chatRoomData?.state]);
+
+  useEffect(() => {
+    setChatOnOff(false);
+  }, []);
 
   // console.log(message);
   useEffect(() => {

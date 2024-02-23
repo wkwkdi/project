@@ -87,14 +87,41 @@ function Cart() {
   }, [item]);
 
   // 구매하기(장바구니에서 선택된 아이템 삭제) 함수
-  const bandleDeleteBtn = async () => {
-    try {
-      await deleteCartItem("ShoppingCart", user[0].MEM, arr, item);
-      alert("구매 갑사합니다!");
-      navigate("/");
-    } catch (error) {
-      console.log(error);
-      alert(error);
+  const bandleDeleteBtn = async (addOrNot) => {
+    if (arr.length === 0) {
+      alert("선택된 상품이 없어요!");
+    } else {
+      if (addOrNot) {
+        try {
+          await deleteCartItem(
+            "ShoppingCart",
+            user[0].MEM,
+            arr,
+            item,
+            addOrNot
+          );
+          alert("구매 갑사합니다!");
+          navigate("/");
+        } catch (error) {
+          console.log(error);
+          alert(error);
+        }
+      } else if (addOrNot === false) {
+        try {
+          await deleteCartItem(
+            "ShoppingCart",
+            user[0].MEM,
+            arr,
+            item,
+            addOrNot
+          );
+          alert("삭제되었습니다.");
+          // navigate("/");
+        } catch (error) {
+          console.log(error);
+          alert(error);
+        }
+      }
     }
   };
   return (
@@ -161,13 +188,23 @@ function Cart() {
                   );
                 })}
               </ul>
-              <div
-                className={styles.btn}
-                onClick={() => {
-                  bandleDeleteBtn();
-                }}
-              >
-                구매하기
+              <div className={styles.submitBtns}>
+                <div
+                  className={styles.btn}
+                  onClick={() => {
+                    bandleDeleteBtn(true);
+                  }}
+                >
+                  구매하기
+                </div>
+                <div
+                  className={styles.btn}
+                  onClick={() => {
+                    bandleDeleteBtn(false);
+                  }}
+                >
+                  삭제하기
+                </div>
               </div>
             </div>
           </>

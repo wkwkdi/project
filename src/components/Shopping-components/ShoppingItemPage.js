@@ -66,7 +66,7 @@ function ShoppingItemPage() {
       setItem(tempItem);
     };
     onLoad();
-    //reviews(후기)가 변할 때마다 렌더링 시켰다
+    //reviews(후기)가 변할 때마다 렌더링
   }, [reviews]);
 
   const handleTextValue = (e) => {

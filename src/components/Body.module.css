@@ -216,6 +216,7 @@
   position: relative;
   z-index: 10;
   background-color: #fff;
+  z-index: 999;
 }
 
 .posts {
@@ -223,6 +224,7 @@
   position: relative;
   z-index: 10;
   background-color: #fff;
+  z-index: 999;
 }
 .post {
   display: flex;
@@ -250,11 +252,21 @@
 
 .basketball {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  top: 10px;
-  right: -200px;
+  width: 500px;
+  height: 500px;
+  top: -50px;
+  right: -275px;
+  z-index: 10;
   animation: rotate 3s linear infinite;
+}
+.communityBox {
+  position: absolute;
+  width: 2000px;
+  height: 500px;
+  top: -50px;
+  left: -700px;
+  background-color: #1e326d;
+  z-index: 20;
 }
 
 @keyframes rotate {
@@ -288,7 +300,7 @@
   overflow-x: hidden;
   position: relative;
   background-color: #fff;
-  z-index: 10;
+  z-index: 99;
 }
 
 .item {
@@ -327,8 +339,19 @@
   width: 360px;
   height: 360px;
   top: 50px;
-  left: -280px;
+  left: -260px;
+  /* transform: rotate(-120deg); */
   animation: leftupanddown 3s linear infinite;
+  z-index: 10;
+}
+.storeBackBox {
+  position: absolute;
+  width: 2000px;
+  height: 440px;
+  top: -35px;
+  right: -420px;
+  border-radius: 9999px 0 0 9999px;
+  background-color: #1e326d;
 }
 @keyframes leftupanddown {
   0% {

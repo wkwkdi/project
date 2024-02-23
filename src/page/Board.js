@@ -42,9 +42,7 @@ function Board() {
     // 받은 것에서 docId만 골라서 변수에 담음
     const bodyState = bodyData?.state;
     setMainBoard(bodyState);
-  }, []);
-
-  console.log(mainBoard);
+  }, [bodyData?.state]);
 
   let account;
   let manager;
@@ -81,7 +79,6 @@ function Board() {
       alert("게시글이 삭제되었습니다.");
       // 수동으로 삭제한 항목 제거
       setClickCheck(false);
-      setMainBoard("");
       setItems((prevItems) =>
         prevItems.filter((item) => item?.docId !== docId)
       );

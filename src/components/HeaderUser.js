@@ -10,25 +10,25 @@ import { Link } from "react-router-dom";
 function HeaderUser({ onClick, memberData, imgClick, setImgClick, Logout }) {
   return (
     <>
-      <Img
-        onClick={onClick}
-        className={`${styles.iconCircle} ${styles.login}`}
-      >
+      <Img onClick={onClick} className={`${styles.iconCircle} ${styles.login}`}>
         <img src={user} alt="user" />
         {memberData && imgClick ? (
           <div className={styles.logBox}>
             <p className={styles.userName}>
               {memberData} <span>님</span>
             </p>
-              <div
-                className={styles.btn}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setImgClick(false);
-                }}
-              >
-                  <Link to={"/mypage"} className={styles.my}>마이페이지</Link>
-              </div>
+
+            <div
+              className={styles.btn}
+              onClick={(e) => {
+                e.stopPropagation();
+                setImgClick(false);
+              }}
+            >
+              <Link to={"mypage"} style={{ color: "#666666" }}>
+                마이페이지
+              </Link>
+            </div>
 
             <div onClick={Logout} className={styles.btn}>
               로그아웃
@@ -39,7 +39,7 @@ function HeaderUser({ onClick, memberData, imgClick, setImgClick, Logout }) {
         )}
       </Img>
     </>
-  )
+  );
 }
 
-export default HeaderUser
+export default HeaderUser;

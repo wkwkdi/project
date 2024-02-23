@@ -183,25 +183,25 @@ function Login({ setItems }) {
                 id="password"
                 placeholder="비밀번호 작성"
                 onChange={handlePwChange}
+                value={password}
               />
             </div>
           </div>
           <div style={{ textAlign: "end" }}>
             <p>
-              <Link to={"findempw"}>이메일 찾기</Link> /{" "}
+              <Link to={"findempw"}>이메일 찾기</Link> /
               <Link to={"findempw"}>
                 <span>비밀번호 찾기</span>
               </Link>
             </p>
           </div>
-          <SelectBtn 
-          onClick={(e) =>
-            {
+          <SelectBtn
+            onClick={(e) => {
               e.preventDefault();
               handleLogin();
-            }
-          
-          }>
+              setPassword("");
+            }}
+          >
             <div>로그인 하기</div>
           </SelectBtn>
           <SelectBtn onClick={() => setItems(true)}>

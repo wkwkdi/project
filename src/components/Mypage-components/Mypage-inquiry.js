@@ -1,10 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-  addChat,
-  getChat,
-  serverTimestamp,
-  updateChat,
-} from "../../api/firebase";
+import { addChat, getChat, serverTimestamp, updateChat } from "../../api/firebase";
 import styles from "./Mypage-inquiry.module.css";
 
 function Inquiry() {
@@ -21,6 +16,7 @@ function Inquiry() {
 
   const chatContainerRef = useRef(null);
 
+
   useEffect(() => {
     const localInfo = JSON.parse(localStorage.getItem("Member"));
     setLocalData({
@@ -31,16 +27,11 @@ function Inquiry() {
   }, []);
   const Chat2 = async () => {
     console.log(localData?.docId);
-    const updatedDocRef = await updateChat(
-      "Member",
-      localData?.docId,
-      "MemberChat",
-      { MC_READ: true }
-    );
-  };
+    const updatedDocRef = await updateChat("Member", localData?.docId, "MemberChat", { MC_READ: true });
+  }
   useEffect(() => {
     if (localData?.docId) {
-      Chat2();
+      Chat2()
     }
   }, [localData?.docId]);
   // 댓글 시간변환
@@ -49,9 +40,7 @@ function Inquiry() {
     const hours = date.getHours();
     const dayAndNight = hours > 11 ? "오후" : "오전";
     const minutes = date.getMinutes();
-    const formattedDate = `${dayAndNight} ${hours < 10 ? "0" + hours : hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }`;
+    const formattedDate = `${dayAndNight} ${hours}:${minutes}`;
 
     // console.log(formattedDate); // "yyyy-mm-dd" 형식의 날짜 출력
     return formattedDate;

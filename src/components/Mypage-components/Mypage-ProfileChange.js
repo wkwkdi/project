@@ -17,7 +17,7 @@ import {
   uploadDeleteImage,
   uploadImage,
 } from "../../api/firebase";
-// import s{ initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
 
 function MyProfile() {
   const [adr, setAdr] = useState({});

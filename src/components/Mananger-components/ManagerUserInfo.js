@@ -78,9 +78,7 @@ function ManagerMember({ member, handleLoad }) {
     const hours = date.getHours();
     const dayAndNight = hours > 11 ? "오후" : "오전";
     const minutes = date.getMinutes();
-    const formattedDate = `${dayAndNight} ${hours < 10 ? "0" + hours : hours}:${
-      minutes < 10 ? "0" + minutes : minutes
-    }`;
+    const formattedDate = `${dayAndNight} ${hours}:${minutes}`;
 
     // console.log(formattedDate); // "yyyy-mm-dd" 형식의 날짜 출력
     return formattedDate;

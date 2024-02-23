@@ -63,7 +63,7 @@ async function getAddress(collectionName) {
 
 // 관리자 데이터 가져오는 함수
 async function getManager(collectionName) {
-  const docRef = doc(db, collectionName, "66c8WvyDzH9M35fb1KTK");
+  const docRef = doc(db, collectionName, "myKd0tZ4VBpM7scVHsg3");
   const docSnapshot = await getDoc(docRef);
   console.log(docRef);
   console.log(docSnapshot);
@@ -195,7 +195,7 @@ async function nicknameComparison(collectionName, nickname, phone) {
   return result;
 }
 
-// 메인페이지 조회수가 가장많은 게시글 5개 가져오기
+// 메인페이지 조회수가 가장많은 게시글 8개 가져오기
 async function getMainBoardData(collectionName) {
   const docQuery = query(
     collection(db, collectionName),
@@ -975,7 +975,7 @@ async function getCartItem(collectionName, docId) {
 }
 
 // 장바구니 삭제
-async function deleteCartItem(collectionName, docId, arr, item) {
+async function deleteCartItem(collectionName, docId, arr, item, option) {
   console.log(collectionName);
   console.log(docId);
   console.log(arr);
@@ -997,16 +997,18 @@ async function deleteCartItem(collectionName, docId, arr, item) {
     CART: result,
   });
 
-  // arr에 date 넣어주기
-  const time = new Date().getTime();
-  console.log(time);
-  console.log(arr);
-  const newArr = arr.map((el, index, arr) => {
-    return { ...el, CART_TIME: time };
-  });
-  console.log(newArr);
+  if (option === true) {
+    // arr에 date 넣어주기
+    const time = new Date().getTime();
+    console.log(time);
+    console.log(arr);
+    const newArr = arr.map((el, index, arr) => {
+      return { ...el, CART_TIME: time };
+    });
+    console.log(newArr);
 
-  await addCartItem("Order", docId, ...newArr);
+    await addCartItem("Order", docId, ...newArr);
+  }
 }
 
 export {

@@ -91,6 +91,13 @@
   padding: 4px;
   background-color: #eaeaea;
 }
+
+.submitBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .btn {
   margin-top: 100px;
   width: 200px;

@@ -137,6 +137,7 @@ const MapComponent = ({
   const docid = items.map((item) => item.docId);
 
   const handleMarkerClick = async (index, dataAll, docId) => {
+    console.log(index);
     console.log(docId);
     console.log(dataAll);
     // const currentMockItem = items[index];
@@ -229,6 +230,7 @@ const MapComponent = ({
               {coordinatesTwo.map((coordinates, index) => {
                 const currentDocId = items;
                 const currentMockItem = items[index];
+                console.log(currentMockItem);
                 // console.log(currentDocId);
 
                 // MEM_ADDRESS가 존재할 때만 마커를 생성

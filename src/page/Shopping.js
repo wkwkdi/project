@@ -41,7 +41,7 @@ function Shopping() {
 
   useState(() => {
     onLoad();
-  }, [originItems]);
+  }, []);
 
   // 카테고리별 정렬
   useEffect(() => {
@@ -79,6 +79,7 @@ function Shopping() {
     setItemSort(value);
   };
 
+  // 검색부분
   const handleSearch = () => {
     setItems(
       tempArr.filter((el) =>
@@ -89,7 +90,6 @@ function Shopping() {
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      // console.log("누름");
       handleSearch();
     }
   };
@@ -136,7 +136,10 @@ function Shopping() {
       console.log("sales");
       setItems((prevItems) => {
         return prevItems.slice().sort((a, b) => {
-          return b["STORE_SALES"] - a["STORE_SALES"];
+          return (
+            (b["STORE_SALES"] === undefined ? 0 : b["STORE_SALES"]) -
+            (a["STORE_SALES"] === undefined ? 0 : a["STORE_SALES"])
+          );
         });
       });
     }
@@ -306,7 +309,6 @@ function Shopping() {
                   to={`/shopping/${item.STORE_DOCID}`}
                   state={item}
                   className={styles.itemTitleLink}
-                  // onClick={(window.scrollTo = { top: 0, behavior: "smooth" })}
                 >
                   {item.STORE_NAME}
                 </Link>
@@ -324,13 +326,11 @@ function Shopping() {
                   });
                   return <ShowStar num={num} />;
                 })()}
-
-                {/* <p>{item.sales}</p> */}
               </div>
             </div>
           ))}
         </div>
-        {/* 페이지네이션 컴포넌트 */}
+        {/* 페이지네이션 */}
         <div className={styles.pagination}>
           {Array.from({ length: Math.ceil(items.length / itemsPerPage) }).map(
             (_, index) => (

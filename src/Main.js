@@ -50,9 +50,9 @@ function Main() {
             <Route index element={<LoginMain />} />
             <Route path="findempw" element={<FindemailPw />} />
             <Route path="SignUp" element={<SignUp />} />
-            <Route path="Agree">
+            {/* <Route path="Agree">
               <Route index element={<Agree />} />
-            </Route>
+            </Route> */}
           </Route>
           <Route path="mypage" element={<MyPage />} />
           <Route path="manager" element={<Manager />} />

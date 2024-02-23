@@ -38,7 +38,8 @@ function Header() {
     setImgClick(false);
   };
   // console.log(memberData);
-  const { headIconLeder, count, setCount, chatOnOff, setChatOnOff } = useContext(BuddizContext);
+  const { headIconLeder, count, setCount, chatOnOff, setChatOnOff } =
+    useContext(BuddizContext);
   console.log(count);
   console.log(headIconLeder);
   useEffect(() => {
@@ -151,7 +152,12 @@ function Header() {
         </div>
         <ul className={styles.ul}>
           {memberData || managerData ? (
-            <Link to={"BuddyFind"} onClick={() => { setChatOnOff(true) }}>
+            <Link
+              to={"BuddyFind"}
+              onClick={() => {
+                setChatOnOff(true);
+              }}
+            >
               <li>버디찾기</li>
             </Link>
           ) : (
@@ -160,7 +166,12 @@ function Header() {
             </Link>
           )}
           {memberData || managerData ? (
-            <Link to={"chatting"} onClick={() => { setChatOnOff(false) }}>
+            <Link
+              to={"chatting"}
+              onClick={() => {
+                setChatOnOff(false);
+              }}
+            >
               <li>채팅</li>
             </Link>
           ) : (
@@ -169,12 +180,22 @@ function Header() {
             </Link>
           )}
 
-          <Link to={"intro"} onClick={() => { setChatOnOff(true) }}>
+          <Link
+            to={"intro"}
+            onClick={() => {
+              setChatOnOff(true);
+            }}
+          >
             <li>소개</li>
           </Link>
 
           {memberData || managerData ? (
-            <Link to={"shopping"} onClick={() => { setChatOnOff(true) }}>
+            <Link
+              to={"shopping"}
+              onClick={() => {
+                setChatOnOff(true);
+              }}
+            >
               <li>쇼핑</li>
             </Link>
           ) : (
@@ -183,7 +204,12 @@ function Header() {
             </Link>
           )}
           {memberData || managerData ? (
-            <Link to={"board"} onClick={() => { setChatOnOff(true) }}>
+            <Link
+              to={"board"}
+              onClick={() => {
+                setChatOnOff(true);
+              }}
+            >
               <li>게시판</li>
             </Link>
           ) : (

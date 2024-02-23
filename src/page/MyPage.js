@@ -11,7 +11,7 @@ import Delivery from "../components/Mypage-components/Mypage-Delivery";
 import Inquiry from "../components/Mypage-components/Mypage-inquiry";
 
 const ImgWraper = styled.div`
-  display: flax;
+  display: flex;
   justify-content: center;
   align-items: center;
 `;

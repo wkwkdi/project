@@ -54,8 +54,6 @@ function BuddyFindMap({
   // console.log(coordinatesTwo);
   const center = coordinates || { lat: 36.3286904, lng: 127.4229992 };
 
-  console.log(info);
-
   // console.log(Obj[0]?.MEM);
   // items Buddy Find Setting에 담긴 데이터를 가지고 docid와 사용자의 이메일과 같은 것만 변수에 담겠다(배열로)
   const it = items.filter((item) => item?.BFS_docid == info?.docId);
@@ -103,7 +101,6 @@ function BuddyFindMap({
   const handleLoad = async () => {
     try {
       const result = await getAddress("Buddy Find Setting");
-      console.log(result);
       const updatedResult = result.map((item, index) => ({
         ...item,
         BFS_PLACE: item.BFS_PLACE || "",
@@ -112,9 +109,8 @@ function BuddyFindMap({
         BFS_docid: item.BFS_docid || "",
         index,
       }));
-      console.log(updatedResult);
       setItems(updatedResult);
-      const docIds = updatedResult.map((item) => item.id);
+      const docIds = updatedResult.map((item) => item.docId);
       // console.log("추출된 docIds:", docIds);
       console.log(updatedResult.BFS_docid);
 
@@ -130,12 +126,10 @@ function BuddyFindMap({
     }
   };
 
-  console.log(it);
-  console.log(items);
   const handleToggle = async () => {
     const what = window.confirm("마커를 삭제하시겠습니까?");
     if (what) {
-      await deleteDatas("Buddy Find Setting", it[0]?.id);
+      await deleteDatas("Buddy Find Setting", it[0]?.docId);
     }
     handleLoad();
     // Obj[0].MEM과 resultArrayData.BFS_docid가 같은 마커를 찾기

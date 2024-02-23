@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./ShowStar.module.css";
 
 const starArr = [1, 2, 3, 4, 5];
+
 function ShowStar({ num, setNum }) {
   const [rating, setRating] = useState(0);
 

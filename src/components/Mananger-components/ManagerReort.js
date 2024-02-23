@@ -37,7 +37,7 @@ function ManagerReport({
     if (imgUrl) {
       const deleteImg = deleteImage(imgUrl);
       alert("신고가 반려 되었습니다.");
-      await deleteDatas("Report", reportContent?.id);
+      await deleteDatas("Report", reportContent?.docId);
       handleLoad();
       // 이미지 삭제 처리 함수
       // 이미지가 삭제 되었을때
@@ -46,7 +46,7 @@ function ManagerReport({
     } else {
       // 이미지가 삭제 되었을때
       alert("삭제조치 되었습니다.");
-      await deleteDatas("Report", reportContent?.id);
+      await deleteDatas("Report", reportContent?.docId);
       handleLoad();
     }
   };
@@ -65,13 +65,13 @@ function ManagerReport({
         // 이미지가 삭제 되었을때
         if (deleteImg) {
           alert("삭제조치 되었습니다.");
-          await deleteDatas("Report", reportContent?.id);
+          await deleteDatas("Report", reportContent?.docId);
           handleLoad();
         }
       } else {
         // 이미지가 삭제 되었을때
         alert("삭제조치 되었습니다.");
-        await deleteDatas("Report", reportContent?.id);
+        await deleteDatas("Report", reportContent?.docId);
         handleLoad();
       }
     } else {

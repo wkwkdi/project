@@ -92,7 +92,7 @@ function BuddyFindSet({
   const bunsu = resultArray.filter(
     (result) => result?.BFS_docid == info?.docId
   );
-  console.log(bunsu[0]);
+  console.log(bunsu[0]?.BFS_docid);
   console.log(info);
 
   console.log(items);
@@ -102,7 +102,7 @@ function BuddyFindSet({
     // console.log(member)
     let member2;
     if (bunsu[0]?.BFS_docid == info?.docId) {
-      member2 = await updateData("Buddy Find Setting", bunsu[0]?.id, {
+      member2 = await updateData("Buddy Find Setting", bunsu[0]?.docId, {
         BFS_SPORTS: sport,
         BFS_TIME: period,
         BFS_TITLE: intro,

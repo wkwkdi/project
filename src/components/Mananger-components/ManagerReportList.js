@@ -8,12 +8,12 @@ function ManagerMemberReport({ handleReportClick, reportList, reportContent }) {
       {reportList.map((member) => (
         <div
           className={
-            reportContent?.id === member?.id
+            reportContent?.docId === member?.docId
               ? styles.managerReportWrapSelect
               : styles.managerReportWrap
           }
-          key={member?.id}
-          onClick={() => handleReportClick(member?.id)}
+          key={member?.docId}
+          onClick={() => handleReportClick(member?.docId)}
         >
           {/* 유저 이름 */}
           <div className={styles.managerReport}>{member?.REPORT_TITLE}</div>

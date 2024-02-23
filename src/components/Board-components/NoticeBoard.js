@@ -314,8 +314,6 @@ function NoticeBoard({
     getBoardData();
   }, [tempData]);
 
-  console.log(content);
-
   return (
     <>
       {/* 전체 부분 */}
