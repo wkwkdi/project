@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project/static/css/main.34e3179d.css",
-    "main.js": "/project/static/js/main.8d7c42d7.js",
+    "main.css": "/project/static/css/main.cc7ed865.css",
+    "main.js": "/project/static/js/main.25356bfb.js",
     "static/media/캐릭터만.gif": "/project/static/media/캐릭터만.4b412edb26c1676dd540.gif",
     "static/media/buddyLogo.svg": "/project/static/media/buddyLogo.b97c1e22b69e1426c9528f0b841d1523.svg",
     "static/media/닭가슴살.png": "/project/static/media/닭가슴살.ff8919b5c103d7c64e18.png",
@@ -26,6 +26,7 @@
     "static/media/tree6.svg": "/project/static/media/tree6.deea7586364b849d792fa01faaec89bc.svg",
     "static/media/mountain-right.svg": "/project/static/media/mountain-right.49e13543e855ddf35b7bc15e0659cffb.svg",
     "static/media/basket.svg": "/project/static/media/basket.ef9aa0bcb423a68e2918d60c4f4a2dd3.svg",
+    "static/media/basketball-solid copy.svg": "/project/static/media/basketball-solid copy.08e8d2942c183639713b2993f7a34382.svg",
     "static/media/basketball-solid.svg": "/project/static/media/basketball-solid.f158b7e80b5657cb6a3e40e65a6da060.svg",
     "static/media/person-swimming-solid.svg": "/project/static/media/person-swimming-solid.27b88933bba0f6560668bbb74ce45960.svg",
     "static/media/futbol-regular.svg": "/project/static/media/futbol-regular.ba199e9a17f3c41b4a689d55afa27824.svg",
@@ -41,6 +42,7 @@
     "static/media/letter.svg": "/project/static/media/letter.dad23fece0ec46c08f7983ab25b7be27.svg",
     "static/media/user.svg": "/project/static/media/user.d9035d5e2918a76774eec23adc969f86.svg",
     "static/media/cloud2.svg": "/project/static/media/cloud2.5381d3c63c80a831589320d59f67205b.svg",
+    "static/media/dumbbell-solid copy.svg": "/project/static/media/dumbbell-solid copy.c57911ba00a34a759720f0f83d847e16.svg",
     "static/media/dumbbell-solid.svg": "/project/static/media/dumbbell-solid.bf7540cc5c21167a240858d74a644bfe.svg",
     "static/media/cart-shopping-solid.svg": "/project/static/media/cart-shopping-solid.4c17683d3e0d97c290c447533c1ad060.svg",
     "static/media/cloud3.svg": "/project/static/media/cloud3.3eecce58f50ff196c0442e3dd1625421.svg",
@@ -57,11 +59,11 @@
     "static/media/chevron-left-solid.svg": "/project/static/media/chevron-left-solid.6575d0989d1d411eb12c04f99df6e6b3.svg",
     "static/media/minus-solid.svg": "/project/static/media/minus-solid.552354b56005563d4e6c740221d31871.svg",
     "static/media/mountain-left.svg": "/project/static/media/mountain-left.a9307431d20f86b9fab18c38593b455a.svg",
-    "main.34e3179d.css.map": "/project/static/css/main.34e3179d.css.map",
-    "main.8d7c42d7.js.map": "/project/static/js/main.8d7c42d7.js.map"
+    "main.cc7ed865.css.map": "/project/static/css/main.cc7ed865.css.map",
+    "main.25356bfb.js.map": "/project/static/js/main.25356bfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.34e3179d.css",
-    "static/js/main.8d7c42d7.js"
+    "static/css/main.cc7ed865.css",
+    "static/js/main.25356bfb.js"
   ]
 }
